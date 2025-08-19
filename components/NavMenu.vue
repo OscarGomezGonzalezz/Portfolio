@@ -1,54 +1,40 @@
 <template>
         <div :class="navClasses">
-  <div class="nav-icon" @click="toggleMenu">
-    <div class="nav-icon__line"></div>
-    <div class="nav-icon__line"></div>
-    <div class="nav-icon__line"></div>
-  </div>
-  <nav class="nav-links">
-    <NuxtLink to="/about" class="mouse-md">About</NuxtLink>
-    <NuxtLink to="/explore" class="mouse-md">Explore</NuxtLink>
-    <NuxtLink to="/contact" class="mouse-md">Contact</NuxtLink>
-  </nav>
-</div>
+          <div class="nav-icon">
+            <div class="nav-icon__line"></div>
+            <div class="nav-icon__line"></div>
+            <div class="nav-icon__line"></div>
+          </div>
+          <nav class="nav-links">
+            <NuxtLink to="/about" class="mouse-md">
+              About
+            </NuxtLink>
+            <NuxtLink to="/explore" class="mouse-md">
+              Explore
+            </NuxtLink>
+            <NuxtLink to="/contact" class="mouse-md">
+              Contact
+            </NuxtLink>
+          </nav>
+        </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from "vue";
-import { useMouse } from "@vueuse/core";
-import { useWindowSize } from "@vueuse/core";
 
-const { x, y } = useMouse();
-const { width } = useWindowSize();
+import {useMouse} from "@vueuse/core";
+import {useWindowSize} from "@vueuse/core";
 
-const menuOpen = ref(false);
-const isMobile = ref(false);
+const {x, y} = useMouse();
+const {width} = useWindowSize();
 
-// Detectar si es móvil
-onMounted(() => {
-  isMobile.value = /Mobi|Android/i.test(navigator.userAgent) || width.value < 768;
-});
-
-// Computed para clases
 const navClasses = computed(() => {
-  // En mobile siempre abierto
-  if (isMobile.value) return { "nav-container": true, "nav-container--open": true };
-  
-  // En desktop depende del click o mouse
   return {
-    "nav-container": true,
-    "nav-container--open": menuOpen.value || (y.value < 180 && x.value > Math.min(width.value / 2, width.value - 800))
-  };
+    'nav-container': true,
+    'nav-container--open': y.value < 180 && x.value > Math.min((width.value / 2), width.value - 800)
+  }
 });
 
-// Toggle menú (solo desktop)
-const toggleMenu = () => {
-  if (!isMobile.value) {
-    menuOpen.value = !menuOpen.value;
-  }
-};
 </script>
-
 
 <style lang="scss" scoped>
 
@@ -63,17 +49,9 @@ const toggleMenu = () => {
   }
 
   @media screen and (max-width: 992px) {
-  .nav-container {
-    display: block; // Antes era "none"
+    display: none;
     position: relative;
   }
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    top: 0;
-    right: 0;
-  }
-}
 
   .nav-icon {
     display: flex;
