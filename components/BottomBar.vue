@@ -9,11 +9,11 @@
       
       <a href="https://github.com/OscarGomezGonzalezz" target="_blank" class="me-4 text-decoration-none"
                 aria-label="View this site on GitHub"><i
-          class="fa-brands fa-github fa-xl github-icon mouse-sm d-none d-xl-inline text-decoration-none"
+          class="fa-brands fa-github fa-xl github-icon mouse-sm  d-inline d-xl-inline text-decoration-none"
           title="View this site on GitHub"></i></a>
       <a href="https://www.linkedin.com/in/oscargomezgonzalez/" target="_blank" class="me-5 text-decoration-none"
                 aria-label="Find me on LinkedIn"><i
-          class="fa-brands fa-linkedin fa-xl linkedin-icon mouse-sm d-none d-xl-inline text-decoration-none"
+          class="fa-brands fa-linkedin fa-xl linkedin-icon mouse-sm d-inline d-xl-inline text-decoration-none"
           title="Find me on LinkedIn"></i></a>
       <StatusIndicator class="d-none d-xl-block"/>
     </div>

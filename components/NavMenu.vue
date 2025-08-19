@@ -14,36 +14,41 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted, watch } from "vue";
 import { useMouse } from "@vueuse/core";
 import { useWindowSize } from "@vueuse/core";
-import { ref, computed, onMounted, watch } from "vue";
 
 const { x, y } = useMouse();
 const { width } = useWindowSize();
 
-const isMobile = ref(false);
 const menuOpen = ref(false);
+const isMobile = ref(false);
 
 // Detectar si es móvil
 onMounted(() => {
   isMobile.value = /Mobi|Android/i.test(navigator.userAgent) || width.value < 768;
 });
 
-// En escritorio, el menú depende del mouse o del click
+// Computed para clases
 const navClasses = computed(() => {
+  // En mobile siempre abierto
+  if (isMobile.value) return { "nav-container": true, "nav-container--open": true };
+  
+  // En desktop depende del click o mouse
   return {
     "nav-container": true,
-    "nav-container--open": isMobile.value ? true : menuOpen.value || (y.value < 180 && x.value > Math.min(width.value / 2, width.value - 800))
+    "nav-container--open": menuOpen.value || (y.value < 180 && x.value > Math.min(width.value / 2, width.value - 800))
   };
 });
 
-// Función para togglear menú
-function toggleMenu() {
+// Toggle menú (solo desktop)
+const toggleMenu = () => {
   if (!isMobile.value) {
     menuOpen.value = !menuOpen.value;
   }
-}
+};
 </script>
+
 
 <style lang="scss" scoped>
 
