@@ -1,56 +1,49 @@
 <template>
         <div :class="navClasses">
-          <div class="nav-icon">
-            <div class="nav-icon__line"></div>
-            <div class="nav-icon__line"></div>
-            <div class="nav-icon__line"></div>
-          </div>
-          <nav class="nav-links">
-            <NuxtLink to="/about" class="mouse-md">
-              About
-            </NuxtLink>
-            <NuxtLink to="/explore" class="mouse-md">
-              Explore
-            </NuxtLink>
-            <NuxtLink to="/contact" class="mouse-md">
-              Contact
-            </NuxtLink>
-          </nav>
-        </div>
+  <div class="nav-icon" @click="toggleMenu">
+    <div class="nav-icon__line"></div>
+    <div class="nav-icon__line"></div>
+    <div class="nav-icon__line"></div>
+  </div>
+  <nav class="nav-links">
+    <NuxtLink to="/about" class="mouse-md">About</NuxtLink>
+    <NuxtLink to="/explore" class="mouse-md">Explore</NuxtLink>
+    <NuxtLink to="/contact" class="mouse-md">Contact</NuxtLink>
+  </nav>
+</div>
 </template>
 
 <script setup>
 import { useMouse } from "@vueuse/core";
 import { useWindowSize } from "@vueuse/core";
-import { ref, computed, onMounted } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 
 const { x, y } = useMouse();
 const { width } = useWindowSize();
 
 const isMobile = ref(false);
+const menuOpen = ref(false);
 
 // Detectar si es móvil
 onMounted(() => {
   isMobile.value = /Mobi|Android/i.test(navigator.userAgent) || width.value < 768;
 });
 
+// En escritorio, el menú depende del mouse o del click
 const navClasses = computed(() => {
-  if (isMobile.value) {
-    // En móvil, siempre mostrar menú abierto
-    return {
-      "nav-container": true,
-      "nav-container--open": true
-    };
-  }
-
-  // En escritorio, comportamiento normal según el mouse
   return {
     "nav-container": true,
-    "nav-container--open": y.value < 180 && x.value > Math.min(width.value / 2, width.value - 800)
+    "nav-container--open": isMobile.value ? true : menuOpen.value || (y.value < 180 && x.value > Math.min(width.value / 2, width.value - 800))
   };
 });
-</script>
 
+// Función para togglear menú
+function toggleMenu() {
+  if (!isMobile.value) {
+    menuOpen.value = !menuOpen.value;
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 
