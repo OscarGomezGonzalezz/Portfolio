@@ -95,21 +95,6 @@ useHead({
       content: 'summary_large_image'
     },
     {
-      hid: 'twitter:site',
-      name: 'twitter:site',
-      content: '@marchantweb'
-    },
-    {
-      hid: 'twitter:creator',
-      name: 'twitter:creator',
-      content: '@marchantweb'
-    },
-    {
-      hid: 'twitter:url',
-      name: 'twitter:url',
-      content: 'https://marchantweb.com'
-    },
-    {
       hid: 'twitter:title',
       name: 'twitter:title',
       content: 'Óscar Gómez | Software Engineer'
@@ -118,11 +103,6 @@ useHead({
       hid: 'twitter:description',
       name: 'twitter:description',
       content: 'Hey I’m Simon, an independent interactive developer based in Orlando, Florida.'
-    },
-    {
-      hid: 'twitter:image',
-      name: 'twitter:image',
-      content: 'https://marchantweb.com/cover.jpg'
     },
     {
       hid: 'twitter:image:alt',
