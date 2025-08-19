@@ -1,14 +1,17 @@
+import { baseURL } from "nuxt/dist/core/runtime/nitro/paths";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   site: {
-    name: 'Marchant Web',
+    name: 'Oscar´s Portfolio',
     url: 'https://oscargomez.dev',
     description:
-      "Hey I'm Simon — a front-end engineer with 15+ years in leading and crafting innovative web projects.",
+      "Hey I'm Óscar",
     defaultLocale: 'en',
   },
 
   app: {
+    baseURL: "/",
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],

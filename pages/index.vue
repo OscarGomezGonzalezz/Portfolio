@@ -1,10 +1,11 @@
 <template>
   <section class="page">
     
-    
+    <!-- 
     <div class="robot-wrapper">
     <spline-viewer url="https://prod.spline.design/3Q0pEaUhhT13LgE5/scene.splinecode"></spline-viewer>
     </div>
+    -->
     <ScrollHint class="scroll-hint"/>
 
   </section>
