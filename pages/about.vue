@@ -15,21 +15,30 @@
               crafting innovative web projects.</h2>
             <div itemprop="knowsAbout">
               <p>
-                I build things with <a
-                  href="https://vuejs.org/" target="_blank" class="mouse-sm">Vue</a> and it's ecosystem of tooling.
-                Before specializing in the frontend, I was a full-stack developer putting together enterprise-scale
-                websites. I enjoy challenging Chrome and Safari to a battle of wits <em>(or patience)</em> and
-                architecting simple solutions to complex problems.
-              </p>
-              <p>
-                I've worked with a wide range of teams, from startups to Fortune 500 companies; typically in a principal
-                technical role. Usually I partner with agencies, design studios, or startups to provide sprints of
-                focused dev work.
-              </p>
-              <p>
-                On a personal note... I live in Orlando FL with my wife and daughter. I <em
-                  style="text-decoration: underline">want</em> to say that I'm a big fan of the outdoors and that I like
-                long walks on the beach; but instead my passion is programming so I'm usually just at my desk 🧑‍💻
+             I didn’t always see myself in tech.
+
+Before university, computers were just… computers. I used them. I didn’t imagine building with them.
+
+Everything changed in my first year at Universidad de Sevilla. Algorithms, Python, networking — suddenly I was asking:
+“How does the internet even work?”
+“How do two computers start talking?”
+
+Curiosity turned into obsession.
+
+By year two, I was connecting the dots: operating systems, databases, networks, cloud — seeing how the tech we use every day really works.
+
+My exchange year at Hochschule Reutlingen took it further. Consulting projects. A paid research assistant role. That’s when curiosity evolved into:
+“How do I build and secure these systems?”
+
+Outside school? Self-studying cloud tech. Building projects. Experimenting. Learning by doing.
+
+Since then:
+
+Automated features for a global Identity Access Management project.
+
+Analyzed AI solutions in sustainability for a $90B client.
+
+Now? I live at the intersection of cybersecurity & cloud. Building is fun. Keeping it safe — that’s the real adventure.
               </p>
             </div>
             <h3 class="mt-5 mb-3">Some teams I've worked with:</h3>
@@ -52,16 +61,10 @@
             </div>
           </div>
           <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5 mb-4 mb-lg-8">
-            <h3 class="mt-5 mb-4">Availability</h3>
-            <p>
-              I'm interested in collaborating with people who are building creative websites, interactive experiences,
-              or bespoke interfaces — especially those with graphics so intense that my GPU catches fire 🔥
-            </p>
+            
             <p class="mb-5">
-              While I always have some sort of ongoing work, I'm open to discussing new opportunities. If you
-              have a project in mind, don't hesitate to reach out.
             </p>
-            <ActionButton to="https://calendly.com/marchantweb/discovery" target="_blank" class="mb-6">
+            <ActionButton to="mailto:hello@oscargomez.dev" target="_blank" class="mb-6">
               <i class="fa-sharp fa-light fa-paper-plane"></i>
               Let's chat
             </ActionButton>
