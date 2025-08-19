@@ -2,17 +2,10 @@
 export default defineNuxtConfig({
   site: {
     name: 'Marchant Web',
-    url: 'https://marchantweb.com',
+    url: 'https://oscargomez.dev',
     description:
       "Hey I'm Simon — a front-end engineer with 15+ years in leading and crafting innovative web projects.",
     defaultLocale: 'en',
-  },
-
-  sitemap: {
-    sources:
-      process.env.NODE_ENV === 'production'
-        ? ['https://api.marchantweb.com/sitemap']
-        : [], // disable in dev
   },
 
   app: {
