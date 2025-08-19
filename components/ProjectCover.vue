@@ -12,7 +12,6 @@
           <source :src="currentPortfolioItem['videoMP4']" type="video/mp4">
         </video>
       </div>
-      <img class="project-cover__featured-image mouse-md" :src="currentPortfolioItem['featuredImage']"/>
     </NuxtLink>
 
     <!-- Title & Stack -->
