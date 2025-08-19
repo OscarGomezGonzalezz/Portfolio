@@ -20,21 +20,37 @@
 </template>
 
 <script setup>
+import { useMouse } from "@vueuse/core";
+import { useWindowSize } from "@vueuse/core";
+import { ref, computed, onMounted } from "vue";
 
-import {useMouse} from "@vueuse/core";
-import {useWindowSize} from "@vueuse/core";
+const { x, y } = useMouse();
+const { width } = useWindowSize();
 
-const {x, y} = useMouse();
-const {width} = useWindowSize();
+const isMobile = ref(false);
 
-const navClasses = computed(() => {
-  return {
-    'nav-container': true,
-    'nav-container--open': y.value < 180 && x.value > Math.min((width.value / 2), width.value - 800)
-  }
+// Detectar si es móvil
+onMounted(() => {
+  isMobile.value = /Mobi|Android/i.test(navigator.userAgent) || width.value < 768;
 });
 
+const navClasses = computed(() => {
+  if (isMobile.value) {
+    // En móvil, siempre mostrar menú abierto
+    return {
+      "nav-container": true,
+      "nav-container--open": true
+    };
+  }
+
+  // En escritorio, comportamiento normal según el mouse
+  return {
+    "nav-container": true,
+    "nav-container--open": y.value < 180 && x.value > Math.min(width.value / 2, width.value - 800)
+  };
+});
 </script>
+
 
 <style lang="scss" scoped>
 
@@ -49,9 +65,17 @@ const navClasses = computed(() => {
   }
 
   @media screen and (max-width: 992px) {
-    display: none;
+  .nav-container {
+    display: block; // Antes era "none"
     position: relative;
   }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    top: 0;
+    right: 0;
+  }
+}
 
   .nav-icon {
     display: flex;
