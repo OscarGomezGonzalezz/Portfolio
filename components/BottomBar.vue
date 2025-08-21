@@ -5,7 +5,7 @@
       <h1 class="bottom-navigation__title ms-4"><span itemprop="name">Óscar Gómez</span><br><span
           itemprop="jobTitle">Software Engineer</span></h1>
     </div>
-    <div class="col-auto mb-2 d-flex align-items-center">
+    <div class="col-auto mb-2 d-flex align-items-center gap-2">
       
       <a href="https://github.com/OscarGomezGonzalezz" target="_blank" class="me-4 text-decoration-none" aria-label="View this site on GitHub">
         <i class="fa-brands fa-github fa-xl github-icon mouse-sm text-decoration-none"
