@@ -121,7 +121,7 @@ useHead({
   ],
   script: [
     {
-      src: "https://kit.fontawesome.com/172ddc2486.js", async: true, defer: true
+      src: "https://kit.fontawesome.com/ba6df9c9f6.js", async: true, defer: true
     }
   ],
 });
