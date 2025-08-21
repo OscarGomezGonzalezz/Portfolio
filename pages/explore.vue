@@ -9,7 +9,7 @@ import {Observer} from "gsap/Observer";
 
 gsap.registerPlugin(ScrollTrigger, Draggable, InertiaPlugin, Observer);
 
-//DATA MUST BE HARD CODED BECAUSE I AM DEPLOYING THE WEB SERVER WITH GITHUB PAGES(ONLY STATIC)
+//DATA MUST BE HARD-CODED BECAUSE I AM DEPLOYING THE WEB SERVER WITH GITHUB PAGES(ONLY STATIC FILES)
 const portfolioData = [
 {
     "title": "How It All Started",
@@ -19,6 +19,8 @@ const portfolioData = [
     "videoWebm": "",
     "videoMP4": "",
     "cover": "/captures/beginning.webp",
+    "intro": "I didn’t always see myself in tech. Before university, computers were just… computers. I used them, but I never imagined building with them.",
+    "content": "Short on time? Take a peek at <a href=\"https://www.oscargomez.dev/about/\" target=\"_blank\" rel=\"noopener noreferrer\">my quick resume</a>. If not, let's dive back into my journey."
   },
   {
     "title": "The Curiosity Spark",
@@ -28,6 +30,8 @@ const portfolioData = [
     "videoWebm": "",
     "videoMP4": "videos/sevilla_compressed.mp4",
     "cover": "captures/sevilla_cover.webp",
+    "intro": "Everything changed in my first year at Universidad de Sevilla. Algorithms, OOP, networking — suddenly, I was asking questions like, “How does the internet even work?” and “How do two computers start talking to each other?” Curiosity turned into obsession",
+    "content": "A new city and new friends at first felt overwhelming — but by the second year I fell for my studies and started achieving top grades."
   },
   {
     "title": "Crossing Borders, Expanding Skills",
@@ -37,6 +41,8 @@ const portfolioData = [
     "videoWebm": "",
     "videoMP4": "videos/reutlingen.mp4",
     "cover": "captures/germany.webp",
+    "intro": "My exchange year at Hochschule Reutlingen in Germany took things further. I deepened my knowledge in Cloud Technologies, Web & Mobile Programming, and Machine Learning — all while travelling, meeting new people, and of course drinking a lot of beer.",
+    "content": "Not only I improved my english and german, but also continued with this passion, and I graduated in the top 5% of my class with a 1.47/5 (First Class Honours)." 
   },
   {
     "title": "Beyond the Classroom",
@@ -46,6 +52,8 @@ const portfolioData = [
     "videoWebm": "",
     "videoMP4": "videos/esb_compressed.mp4",
     "cover": "captures/esb_cover.webp",
+    "intro": "In the first semester of my exchange, I joined the <a href=\"https://esbstudentconsulting.de/\" target=\"_blank\" rel=\"noopener noreferrer\">ESB Student Consulting Club</a> and met many interesting, ambitious people.",
+    "content": "I conducted a market analysis of generative and specialized AI solutions in sustainability, providing potential use cases for a $90B client."
   },
   {
     "title": "Turning Curiosity Into Impact",
@@ -55,6 +63,8 @@ const portfolioData = [
     "videoWebm": "",
     "videoMP4": "",
     "cover": "captures/research.webp",
+    "intro": "By the second semester, my professor offered me a paid student assistant role in his research project. That’s when my curiosity evolved from “how things work” to “how to build and secure them.”",
+    "content": "I integrated and automated features of an Identity Access Management (IAM) system into the global <a href=\"https://www.forschungspraxennetz-bw.de/\" target=\"_blank\" rel=\"noopener noreferrer\">FoPraNet-BW Project</a>, working alongside Prof. Dr. Christian Thies and Dipl.-Ing. Sven Dörflinger."
   },
   {
     "title": "Where I’m Headed",
@@ -64,6 +74,8 @@ const portfolioData = [
     "videoWebm": "",
     "videoMP4": "",
     "cover": "captures/now.webp",
+    "intro":"Outside of school, I’ve self-studied cloud & cybersecurity and built several hands-on projects, connecting my love for learning with real-world experimentation.",
+    "content": "Check my <a href=\"https://github.com/oscargomezgonzalezz\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> for a clearer view of what I am talking about."
   }
   ]
 

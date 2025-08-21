@@ -23,7 +23,7 @@ const indicatorClasses = computed(() => {
   }
 });
 
-const status = "Don´t doubt in contact me"
+const status = "Feel free to reach"
 
 </script>
 

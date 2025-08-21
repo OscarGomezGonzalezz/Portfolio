@@ -21,11 +21,9 @@
   </div>
 
   <div v-else class="project-cover__details project-cover__fade" @click="toggleDetails">
-    <h2>{{ currentPortfolioItem["title"] }}</h2>
-    <p class="lead">{{ currentPortfolioItem["lead"] }}</p>
     <div class="meta">
-    <span><strong>Type:</strong> {{ currentPortfolioItem["type"] }}</span>
-    <span><strong>Stack:</strong> {{ currentPortfolioItem["stack"] }}</span>
+    <h1 class="card-intro" v-html="currentPortfolioItem['intro']"></h1>
+    <h1 class="card-content" v-html="currentPortfolioItem['content']"></h1>
     </div>
   </div>
 </Transition>
@@ -102,6 +100,30 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 
+.card-intro {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+}
+
+.card-content {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: #555;
+}
+
+/* enlaces dentro del contenido */
+.card-content a {
+  color: #6c5ce7; /* llamativo */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+  color: #341f97;
+}
+
 .project-cover__fade {
   opacity: 1;
   transition: opacity 0.3s ease-in-out !important; // !important para sobrescribir otros transitions
@@ -128,6 +150,7 @@ onMounted(() => {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
 
 .project-cover__details:hover {
   box-shadow: 0 15px 40px rgba(0,0,0,0.25);
