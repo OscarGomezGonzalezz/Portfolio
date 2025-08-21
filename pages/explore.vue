@@ -256,7 +256,7 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: slider-rotation 12s ease-in-out infinite alternate;
+  animation: slider-rotation 24s ease-in-out infinite alternate;
 
   @media screen and (max-width: 768px) {
     margin-bottom: 100px;

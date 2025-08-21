@@ -1,39 +1,53 @@
 <template>
-  <article role="article" :class="containerClasses" tabindex="0"
-           :aria-label="currentPortfolioItem['title']"
-           :aria-description="currentPortfolioItem['lead']">
+  <article
+    role="article"
+    :class="containerClasses"
+    tabindex="0"
+    :aria-label="currentPortfolioItem.title"
+    :aria-description="currentPortfolioItem.lead"
+  >
+    <!-- Show video cover if not showing details -->
+    <div
+      v-if="!showDetails"
+      class="project-cover__video-container project-cover__fade"
+      @click="toggleDetails"
+    >
+      <video
+        ref="video"
+        :style="mediaStyle"
+        class="project-cover__video mouse-md"
+        loop
+        muted
+        autoplay
+        playsinline
+        :poster="currentPortfolioItem.cover"
+      >
+        <source :src="currentPortfolioItem.videoWebm" type="video/webm" />
+        <source :src="currentPortfolioItem.videoMP4" type="video/mp4" />
+      </video>
 
-<Transition name="fade">
-  <div v-if="!showDetails" class="project-cover__video-container project-cover__fade" @click="toggleDetails">
-    <video ref="video" :style="mediaStyle" class="project-cover__video mouse-md" loop muted autoplay playsinline :poster="currentPortfolioItem['cover']">
-      <source :src="currentPortfolioItem['videoWebm']" type="video/webm">
-      <source :src="currentPortfolioItem['videoMP4']" type="video/mp4">
-    </video>
-
-    <div class="title-bar row project-cover__fade" >
-      <div class="col-auto">
-        <div class="d-block">
-          <h1 class="project-cover__title mb-0">{{ currentPortfolioItem["title"] }}</h1>
-          <span class="project-cover__type text-small mb-0 d-block">{{ currentPortfolioItem["type"] }}</span>
+      <div class="title-bar row project-cover__fade">
+        <div class="col-auto">
+          <div class="d-block">
+            <h1 class="project-cover__title mb-0">{{ currentPortfolioItem.title }}</h1>
+            <span class="project-cover__type text-small mb-0 d-block">{{ currentPortfolioItem.type }}</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div v-else class="project-cover__details project-cover__fade" @click="toggleDetails">
-    <div class="meta">
-    <h1 class="card-intro" v-html="currentPortfolioItem['intro']"></h1>
-    <h1 class="card-content" v-html="currentPortfolioItem['content']"></h1>
+    <!-- Show details if showDetails is true -->
+    <div v-if="showDetails" class="project-cover__details project-cover__fade" @click="toggleDetails">
+      <div class="meta">
+        <h1 class="card-intro" v-html="currentPortfolioItem.intro"></h1>
+        <h1 class="card-content" v-html="currentPortfolioItem.content"></h1>
+      </div>
     </div>
-  </div>
-</Transition>
-
   </article>
 </template>
 
 <script setup>
-
-import {useMouse, useWindowSize} from "@vueuse/core";
+import { useMouse, useWindowSize } from "@vueuse/core";
 
 const showDetails = ref(false);
 const toggleDetails = () => {
@@ -186,7 +200,8 @@ onMounted(() => {
 
 .project-cover {
   position: relative;
-  height: 600px;
+  height: 50vh;
+  width: 80vh;
   flex: none;
   background: #111115;
   border-radius: 8px;
@@ -212,7 +227,7 @@ onMounted(() => {
 
   @media screen and (max-width: 1200px) {
     height: 60svh;
-    aspect-ratio: 0.8;
+    width: 50svh;
   }
 }
 .fade-enter-active, .fade-leave-active {
