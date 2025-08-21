@@ -11,55 +11,42 @@
             <div class="d-flex flex-row align-items-center mb-5">
               <img src="~assets/images/headshot.jpg" alt="Hey I'm Simon" class="headshot me-4 me-lg-5">
             </div>
-            <h2 class="my-4" itemprop="description">Hey I'm Simon — an independent interactive developer with 15+ years of
-              crafting innovative web projects.</h2>
+            <h2 class="my-4" itemprop="description">Hi there 👋 <br>  It's Óscar here</h2>
             <div itemprop="knowsAbout">
-              <p>
-             I didn’t always see myself in tech.
-
-Before university, computers were just… computers. I used them. I didn’t imagine building with them.
-
-Everything changed in my first year at Universidad de Sevilla. Algorithms, Python, networking — suddenly I was asking:
-“How does the internet even work?”
-“How do two computers start talking?”
-
-Curiosity turned into obsession.
-
-By year two, I was connecting the dots: operating systems, databases, networks, cloud — seeing how the tech we use every day really works.
-
-My exchange year at Hochschule Reutlingen took it further. Consulting projects. A paid research assistant role. That’s when curiosity evolved into:
-“How do I build and secure these systems?”
-
-Outside school? Self-studying cloud tech. Building projects. Experimenting. Learning by doing.
-
-Since then:
-
-Automated features for a global Identity Access Management project.
-
-Analyzed AI solutions in sustainability for a $90B client.
-
-Now? I live at the intersection of cybersecurity & cloud. Building is fun. Keeping it safe — that’s the real adventure.
-              </p>
+            <p>
+            Quick story: I studied Software Engineering at Universidad de Sevilla (2022–26), and did a 2024–25 exchange year at Hochschule Reutlingen.
+            During the exchange, a professor hired me as a Research Associate (May–Aug 2025) integrating and automating IAM features for the
+            <a href="https://www.forschungspraxennetz-bw.de/" target="_blank" rel="noopener noreferrer">FoPraNet-BW project</a>.
+           </p>
+            <p>
+            Before that, as a Junior Consultant at <a href="https://esbstudentconsulting.de/" target="_blank" rel="noopener noreferrer">ESB Student Consulting Club</a>.
+            (Oct 2024–Mar 2025) I mapped generative and specialized AI solutions in sustainability and proposed practical use cases for a $90B client (no pressure).
+            </p>
+            <p>
+            Since starting university, I’ve loved learning on my own in parallel, which has allowed me to deepen my knowledge in cybersecurity and cloud computing, adding more skills
+            and projects to my portfolio than the expected.
+            </p>
             </div>
-            <h3 class="mt-5 mb-3">Some teams I've worked with:</h3>
+            <h3 class="mt-5 mb-3">Some of these skills are:</h3>
           </div>
           <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6">
             <div class="client-logo__container">
-              <img src="~/assets/images/clients/google.svg" alt="Google logo" class="client-logo mouse-md">
-              <img src="~/assets/images/clients/dolby.svg" alt="Dolby logo" class="client-logo mouse-md">
-              <img src="~/assets/images/clients/abm.svg" alt="ABM logo" class="client-logo mouse-md">
-              <img src="~/assets/images/clients/steward.svg" alt="Steward logo" class="client-logo mouse-md">
-              <img src="~/assets/images/clients/mit.svg" alt="MIT logo" class="client-logo mouse-md">
-              <img src="~/assets/images/clients/alaska.svg" alt="Alaska Airlines logo" class="client-logo mouse-md">
-              <img src="~/assets/images/clients/stanley.svg" alt="Stanley Black and Decker logo"
+              <img src="/skills/docker.svg" alt="Docker logo" class="client-logo mouse-md">
+              <img src="/skills/kubernetes.svg" alt="Dolby logo" class="client-logo mouse-md">
+              <img src="/skills/keycloak.svg" alt="ABM logo" class="client-logo mouse-md">
+              <img src="/skills/spring.svg" alt="Steward logo" class="client-logo mouse-md">
+              <img src="/skills/java.svg" alt="MIT logo" class="client-logo mouse-md">
+              <img src="/skills/terraform.svg" alt="Alaska Airlines logo" class="client-logo mouse-md">
+              <img src="/skills/python.svg" alt="Stanley Black and Decker logo"
                    class="client-logo mouse-md">
-              <img src="~/assets/images/clients/panera.svg" alt="Panera Bread logo"
+              <img src="/skills/nginx.svg" alt="Panera Bread logo"
                    class="client-logo mouse-md">
-              <img src="~/assets/images/clients/georgia.svg" alt="University of Georgia logo"
+              <img src="/skills/github-actions.svg" alt="University of Georgia logo"
                    class="client-logo mouse-md">
-              <img src="~/assets/images/clients/mcasd.svg" alt="MCASD logo" class="client-logo mouse-md">
+              <img src="/skills/iam.svg" alt="MCASD logo" class="client-logo mouse-md">
             </div>
           </div>
+          <h3 style="margin-top: 5vh"><a href="https://github.com/OscarGomezGonzalezz" target="_blank" rel="noopener noreferrer">Some of my personal projects</a></h3>
           <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5 mb-4 mb-lg-8">
             
             <p class="mb-5">
@@ -111,7 +98,7 @@ useHead({
 
 .client-logo__container {
   display: grid;
-  gap: 5px;
+  gap: 15px;
   grid-template-columns: repeat(5, 1fr);
 
   @media screen and (max-width: 1200px) {
@@ -130,7 +117,7 @@ useHead({
 }
 
 .client-logo {
-  width: 100%;
+  width: 50%;
   opacity: 1;
   transition: opacity 0.3s ease;
 }

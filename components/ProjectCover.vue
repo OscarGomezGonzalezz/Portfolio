@@ -4,13 +4,13 @@
            :aria-description="currentPortfolioItem['lead']">
 
 <Transition name="fade">
-  <div v-if="!showDetails" class="project-cover__video-container" @click="toggleDetails">
+  <div v-if="!showDetails" class="project-cover__video-container project-cover__fade" @click="toggleDetails">
     <video ref="video" :style="mediaStyle" class="project-cover__video mouse-md" loop muted autoplay playsinline :poster="currentPortfolioItem['cover']">
       <source :src="currentPortfolioItem['videoWebm']" type="video/webm">
       <source :src="currentPortfolioItem['videoMP4']" type="video/mp4">
     </video>
 
-    <div class="title-bar row" >
+    <div class="title-bar row project-cover__fade" >
       <div class="col-auto">
         <div class="d-block">
           <h1 class="project-cover__title mb-0">{{ currentPortfolioItem["title"] }}</h1>
@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <div v-else class="project-cover__details" @click="toggleDetails">
+  <div v-else class="project-cover__details project-cover__fade" @click="toggleDetails">
     <h2>{{ currentPortfolioItem["title"] }}</h2>
     <p class="lead">{{ currentPortfolioItem["lead"] }}</p>
     <div class="meta">
@@ -101,26 +101,35 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+
+.project-cover__fade {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out !important; // !important para sobrescribir otros transitions
+}
+
+.project-cover__fade.hidden {
+  opacity: 0;
+}
+
 .project-cover__details {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 2rem;
+  border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   color: #333;
-  cursor: pointer;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .project-cover__details:hover {
-  transform: translate(-50%, -50%) scale(1.02);
   box-shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
 
@@ -138,7 +147,7 @@ onMounted(() => {
 
 .project-cover__details .meta {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 1rem;
   font-size: 0.95rem;
   color: #666;
@@ -151,6 +160,7 @@ onMounted(() => {
   border-radius: 10px;
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
 }
+
 .project-cover {
   position: relative;
   height: 600px;
