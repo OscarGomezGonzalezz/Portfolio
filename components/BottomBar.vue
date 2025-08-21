@@ -5,7 +5,7 @@
       <h1 class="bottom-navigation__title ms-4"><span itemprop="name">Óscar Gómez</span><br><span
           itemprop="jobTitle">Software Engineer</span></h1>
     </div>
-    <div class="col-auto mb-3 d-flex align-items-center">
+    <div class="col-auto mb-2 d-flex align-items-center">
       
       <a href="https://github.com/OscarGomezGonzalezz" target="_blank" class="me-4 text-decoration-none" aria-label="View this site on GitHub">
         <i class="fa-brands fa-github fa-xl github-icon mouse-sm text-decoration-none"
@@ -70,7 +70,7 @@
   }
 }
 
-.github-icon, .audio-icon, .twitter-icon, .linkedin-icon, email-icon {
+.github-icon, .audio-icon, .twitter-icon, .linkedin-icon, .email-icon {
   color: rgba(224, 222, 255, 0.8);
   mix-blend-mode: color-dodge;
   cursor: pointer;
