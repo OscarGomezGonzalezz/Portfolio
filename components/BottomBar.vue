@@ -17,6 +17,11 @@
         title="Find me on LinkedIn">
         </i>
       </a>
+      <a href="mailto:hello@oscargomez.dev" target="_blank" class="me-5 text-decoration-none" aria-label="Find me on LinkedIn">
+        <i class="fa-solid fa-envelope fa-xl email-icon mouse-sm text-decoration-none d-sm-none"
+        title="Contact me">
+        </i>
+      </a>
       <StatusIndicator class="d-none d-xl-block"/>
     </div>
   </div>
