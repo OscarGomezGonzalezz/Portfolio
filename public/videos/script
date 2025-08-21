@@ -1,8 +1,8 @@
 import subprocess
 
 # Archivo original y salida comprimida
-input_file = "reutlingen.mp4"
-output_file = "reutlingen_compressed.mp4"
+input_file = "research.mp4"
+output_file = "research_compressed.mp4"
 
 # Comando FFmpeg
 command = [

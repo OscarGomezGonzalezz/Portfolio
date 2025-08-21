@@ -9,488 +9,66 @@ import {Observer} from "gsap/Observer";
 
 gsap.registerPlugin(ScrollTrigger, Draggable, InertiaPlugin, Observer);
 
+//DATA MUST BE HARD CODED BECAUSE I AM DEPLOYING THE WEB SERVER WITH GITHUB PAGES(ONLY STATIC)
 const portfolioData = [
 {
-    "id": "77790b2b-f14a-4b62-ac1c-75faa334578f",
-    "title": "Before Tech",
+    "title": "How It All Started",
     "listed": true,
-    "slug": "advancing-healthcare",
-    "type": "Interactive Visualization",
+    "slug": "background",
+    "type": "Background",
     "videoWebm": "",
     "videoMP4": "",
     "cover": "/captures/beginning.webp",
-    "client": "Deerfield",
-    "clientLogo": null,
-    "partner": "White Rhino",
-    "completed": 2019,
-    "stack": [
-      {
-        "id": "b0f3b137-8162-42b9-9374-929833891c93",
-        "name": "GSAP",
-        "color": "pink"
-      },
-      {
-        "id": "945e2733-0557-49d6-91ca-b5924dc95216",
-        "name": "HTML5 Canvas",
-        "color": "brown"
-      },
-      {
-        "id": "b8723929-bf87-4ce5-9062-5f3bd20e06b4",
-        "name": "SCSS",
-        "color": "default"
-      }
-    ],
-    "role": "Creative Developer",
-    "lead": "Building a dynamic coundreds of creatively animated, interactive dots.",
-    "awards": null,
-    "pageContent": [
-      {
-        "object": "block",
-        "id": "8ecc0cad-7ca4-4a56-922a-7b5cfc022d85",
-        "parent": {
-          "type": "page_id",
-          "page_id": "77790b2b-f14a-4b62-ac1c-75faa334578f"
-        },
-        "created_time": "2023-01-10T03:45:00.000Z",
-        "last_edited_time": "2023-02-10T20:33:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to br. The challenge that presented itself was how visitors would find content, and how to display it to prouser experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to browse and denge that presented itself was how visitors would find content, and how to display it to proThe user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-              "href": null
-            }
-          ],
-          "color": "default"
-        }
-      },
-    ]
   },
   {
-    "id": "77790b2b-f14a-4b62-ac1c-75faa334578f",
-    "title": "Advancing Healthcare",
+    "title": "The Curiosity Spark",
     "listed": true,
-    "slug": "advancing-healthcare",
-    "type": "Interactive Visualization",
+    "slug": "seville",
+    "type": "The Beginning",
     "videoWebm": "",
     "videoMP4": "videos/sevilla_compressed.mp4",
     "cover": "captures/sevilla_cover.webp",
-    "client": "Deerfield",
-    "clientLogo": null,
-    "partner": "White Rhino",
-    "completed": 2019,
-    "stack": [
-      {
-        "id": "b0f3b137-8162-42b9-9374-929833891c93",
-        "name": "GSAP",
-        "color": "pink"
-      },
-      {
-        "id": "945e2733-0557-49d6-91ca-b5924dc95216",
-        "name": "HTML5 Canvas",
-        "color": "brown"
-      },
-      {
-        "id": "b8723929-bf87-4ce5-9062-5f3bd20e06b4",
-        "name": "SCSS",
-        "color": "default"
-      }
-    ],
-    "role": "Creative Developer",
-    "lead": "Building a dynamic contene with hundreds of creatively animated, interactive dots.",
-    "awards": null,
-    "pageContent": [
-      {
-        "object": "block",
-        "id": "8ecc0cad-7ca4-4a56-922a-7b5cfc022d85",
-        "parent": {
-          "type": "page_id",
-          "page_id": "77790b2b-f14a-4b62-ac1c-75faa334578f"
-        },
-        "created_time": "2023-01-10T03:45:00.000Z",
-        "last_edited_time": "2023-02-10T20:33:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to browsllenge that presented itself was how visitors would find content, and how to display it to promote ery. The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to browallenge that presented itself was how visitors would find content, and how to display it to pry. The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-              "href": null
-            }
-          ],
-          "color": "default"
-        }
-      },
-    ]
   },
   {
-    "id": "77790b2b-f14a-4b62-ac1c-75faa334578f",
-    "title": "Advancing Healthcare",
+    "title": "Crossing Borders, Expanding Skills",
     "listed": true,
-    "slug": "advancing-healthcare",
-    "type": "Interactive Visualization",
+    "slug": "exchange",
+    "type": "Exchange Year",
     "videoWebm": "",
     "videoMP4": "videos/reutlingen.mp4",
     "cover": "captures/germany.webp",
-    "client": "Deerfield",
-    "clientLogo": null,
-    "partner": "White Rhino",
-    "completed": 2019,
-    "stack": [
-      {
-        "id": "b0f3b137-8162-42b9-9374-929833891c93",
-        "name": "GSAP",
-        "color": "pink"
-      },
-      {
-        "id": "945e2733-0557-49d6-91ca-b5924dc95216",
-        "name": "HTML5 Canvas",
-        "color": "brown"
-      },
-      {
-        "id": "b8723929-bf87-4ce5-9062-5f3bd20e06b4",
-        "name": "SCSS",
-        "color": "default"
-      }
-    ],
-    "role": "Creative Developer",
-    "lead": "Building a dynamic contentovery experience with hundreds of creatively animated, interactive dots.",
-    "awards": null,
-    "pageContent": [
-      {
-        "object": "block",
-        "id": "8ecc0cad-7ca4-4a56-922a-7b5cfc022d85",
-        "parent": {
-          "type": "page_id",
-          "page_id": "77790b2b-f14a-4b62-ac1c-75faa334578f"
-        },
-        "created_time": "2023-01-10T03:45:00.000Z",
-        "last_edited_time": "2023-02-10T20:33:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to brow. The challenge that presented itself was how visitors would find content, and how to display it to promote discovery. The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to browse presented itself was how visitors would find content, and how to display it to pro The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-              "href": null
-            }
-          ],
-          "color": "default"
-        }
-      },
-    ]
   },
   {
-    "id": "77790b2b-f14a-4b62-ac1c-75faa334578f",
-    "title": "Advancing Healthcare",
+    "title": "Beyond the Classroom",
     "listed": true,
-    "slug": "advancing-healthcare",
-    "type": "Interactive Visualization",
-    "videoWebm": "",
-    "videoMP4": "",
-    "cover": "captures/research.webp",
-    "client": "Deerfield",
-    "clientLogo": null,
-    "partner": "White Rhino",
-    "completed": 2019,
-    "stack": [
-      {
-        "id": "b0f3b137-8162-42b9-9374-929833891c93",
-        "name": "GSAP",
-        "color": "pink"
-      },
-      {
-        "id": "945e2733-0557-49d6-91ca-b5924dc95216",
-        "name": "HTML5 Canvas",
-        "color": "brown"
-      },
-      {
-        "id": "b8723929-bf87-4ce5-9062-5f3bd20e06b4",
-        "name": "SCSS",
-        "color": "default"
-      }
-    ],
-    "role": "Creative Developer",
-    "lead": "Building a dynamic contentovery experience with hundreds of creatively animated, interactive dots.",
-    "awards": null,
-    "pageContent": [
-      {
-        "object": "block",
-        "id": "8ecc0cad-7ca4-4a56-922a-7b5cfc022d85",
-        "parent": {
-          "type": "page_id",
-          "page_id": "77790b2b-f14a-4b62-ac1c-75faa334578f"
-        },
-        "created_time": "2023-01-10T03:45:00.000Z",
-        "last_edited_time": "2023-02-10T20:33:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to brow. The challenge that presented itself was how visitors would find content, and how to display it to promote discovery. The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to browse presented itself was how visitors would find content, and how to display it to pro The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-              "href": null
-            }
-          ],
-          "color": "default"
-        }
-      },
-    ]
-  },
-  {
-    "id": "77790b2b-f14a-4b62-ac1c-75faa334578f",
-    "title": "Advancing Healthcare",
-    "listed": true,
-    "slug": "advancing-healthcare",
-    "type": "Interactive Visualization",
+    "slug": "consulting-club",
+    "type": "Consulting Club",
     "videoWebm": "",
     "videoMP4": "videos/esb_compressed.mp4",
     "cover": "captures/esb_cover.webp",
-    "client": "Deerfield",
-    "clientLogo": null,
-    "partner": "White Rhino",
-    "completed": 2019,
-    "stack": [
-      {
-        "id": "b0f3b137-8162-42b9-9374-929833891c93",
-        "name": "GSAP",
-        "color": "pink"
-      },
-      {
-        "id": "945e2733-0557-49d6-91ca-b5924dc95216",
-        "name": "HTML5 Canvas",
-        "color": "brown"
-      },
-      {
-        "id": "b8723929-bf87-4ce5-9062-5f3bd20e06b4",
-        "name": "SCSS",
-        "color": "default"
-      }
-    ],
-    "role": "Creative Developer",
-    "lead": "Building a dynamic contentovery experience with hundreds of creatively animated, interactive dots.",
-    "awards": null,
-    "pageContent": [
-      {
-        "object": "block",
-        "id": "8ecc0cad-7ca4-4a56-922a-7b5cfc022d85",
-        "parent": {
-          "type": "page_id",
-          "page_id": "77790b2b-f14a-4b62-ac1c-75faa334578f"
-        },
-        "created_time": "2023-01-10T03:45:00.000Z",
-        "last_edited_time": "2023-02-10T20:33:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to brow. The challenge that presented itself was how visitors would find content, and how to display it to promote discovery. The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to browse presented itself was how visitors would find content, and how to display it to pro The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-              "href": null
-            }
-          ],
-          "color": "default"
-        }
-      },
-    ]
   },
   {
-    "id": "77790b2b-f14a-4b62-ac1c-75faa334578f",
-    "title": "Advancing Healthcare",
+    "title": "Turning Curiosity Into Impact",
     "listed": true,
-    "slug": "advancing-healthcare",
-    "type": "Interactive Visualization",
+    "slug": "research",
+    "type": "Real-World Impact",
+    "videoWebm": "",
+    "videoMP4": "",
+    "cover": "captures/research.webp",
+  },
+  {
+    "title": "Where I’m Headed",
+    "listed": true,
+    "slug": "currently",
+    "type": "Current Focus",
     "videoWebm": "",
     "videoMP4": "",
     "cover": "captures/now.webp",
-    "client": "Deerfield",
-    "clientLogo": null,
-    "partner": "White Rhino",
-    "completed": 2019,
-    "stack": [
-      {
-        "id": "b0f3b137-8162-42b9-9374-929833891c93",
-        "name": "GSAP",
-        "color": "pink"
-      },
-      {
-        "id": "945e2733-0557-49d6-91ca-b5924dc95216",
-        "name": "HTML5 Canvas",
-        "color": "brown"
-      },
-      {
-        "id": "b8723929-bf87-4ce5-9062-5f3bd20e06b4",
-        "name": "SCSS",
-        "color": "default"
-      }
-    ],
-    "role": "Creative Developer",
-    "lead": "Building a dynamic contentovery experience with hundreds of creatively animated, interactive dots.",
-    "awards": null,
-    "pageContent": [
-      {
-        "object": "block",
-        "id": "8ecc0cad-7ca4-4a56-922a-7b5cfc022d85",
-        "parent": {
-          "type": "page_id",
-          "page_id": "77790b2b-f14a-4b62-ac1c-75faa334578f"
-        },
-        "created_time": "2023-01-10T03:45:00.000Z",
-        "last_edited_time": "2023-02-10T20:33:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "850b2956-a12b-4dd0-a6bd-d72a0f8cd68f"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to brow. The challenge that presented itself was how visitors would find content, and how to display it to promote discovery. The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Deerfield is an investment management company with a focus on healthcare - with hundreds of articles on their website for visitors to browse presented itself was how visitors would find content, and how to display it to pro The user experience had to guide users towards key content, while also keeping it well organized and fluid enough that you could explore in many different ways.",
-              "href": null
-            }
-          ],
-          "color": "default"
-        }
-      },
-    ]
   }
   ]
+
+
+
 
 // TODO: Review on mobile and perhaps make the cards a little smaller - need to handle resize event.
 

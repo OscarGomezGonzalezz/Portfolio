@@ -113,8 +113,8 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
-  margin-left: 9vh;
+  margin-top: 12vh;
+  margin-left: 11vh;
 
   spline-viewer {
     width: 100vw;     

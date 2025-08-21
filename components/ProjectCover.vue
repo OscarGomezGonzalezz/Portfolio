@@ -3,26 +3,32 @@
            :aria-label="currentPortfolioItem['title']"
            :aria-description="currentPortfolioItem['lead']">
 
-    <!-- Video -->
-    <NuxtLink :to="'/portfolio/' + currentPortfolioItem['slug']" @click="isActive = false">
-      <div class="project-cover__video-container">
-        <video ref="video" :style="mediaStyle" class="project-cover__video mouse-md" loop="true" muted
-               :autoplay="true" playsinline :poster="currentPortfolioItem['cover']">
-          <source :src="currentPortfolioItem['videoWebm']" type="video/webm">
-          <source :src="currentPortfolioItem['videoMP4']" type="video/mp4">
-        </video>
-      </div>
-    </NuxtLink>
+<Transition name="fade">
+  <div v-if="!showDetails" class="project-cover__video-container" @click="toggleDetails">
+    <video ref="video" :style="mediaStyle" class="project-cover__video mouse-md" loop muted autoplay playsinline :poster="currentPortfolioItem['cover']">
+      <source :src="currentPortfolioItem['videoWebm']" type="video/webm">
+      <source :src="currentPortfolioItem['videoMP4']" type="video/mp4">
+    </video>
 
-    <!-- Title & Stack -->
-    <div class="title-bar row">
+    <div class="title-bar row" >
       <div class="col-auto">
         <div class="d-block">
-          <h3 class="project-cover__title mb-0">{{ currentPortfolioItem["title"] }}</h3>
+          <h1 class="project-cover__title mb-0">{{ currentPortfolioItem["title"] }}</h1>
           <span class="project-cover__type text-small mb-0 d-block">{{ currentPortfolioItem["type"] }}</span>
         </div>
       </div>
     </div>
+  </div>
+
+  <div v-else class="project-cover__details" @click="toggleDetails">
+    <h2>{{ currentPortfolioItem["title"] }}</h2>
+    <p class="lead">{{ currentPortfolioItem["lead"] }}</p>
+    <div class="meta">
+    <span><strong>Type:</strong> {{ currentPortfolioItem["type"] }}</span>
+    <span><strong>Stack:</strong> {{ currentPortfolioItem["stack"] }}</span>
+    </div>
+  </div>
+</Transition>
 
   </article>
 </template>
@@ -31,6 +37,10 @@
 
 import {useMouse, useWindowSize} from "@vueuse/core";
 
+const showDetails = ref(false);
+const toggleDetails = () => {
+  showDetails.value = !showDetails.value;
+};
 const props = defineProps({
   portfolioItem: {
     type: Object,
@@ -91,7 +101,56 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+.project-cover__details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
 
+.project-cover__details:hover {
+  transform: translate(-50%, -50%) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.project-cover__details h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-cover__details .lead {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.project-cover__details .meta {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.project-cover__details .meta span {
+  background: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
 .project-cover {
   position: relative;
   height: 600px;
@@ -122,6 +181,19 @@ onMounted(() => {
     height: 60svh;
     aspect-ratio: 0.8;
   }
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.fade-enter-to, .fade-leave-from {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .title-bar {
