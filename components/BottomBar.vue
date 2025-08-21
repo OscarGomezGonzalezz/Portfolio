@@ -17,7 +17,7 @@
         title="Find me on LinkedIn">
         </i>
       </a>
-      <a href="mailto:hello@oscargomez.dev" target="_blank" class="me-5 text-decoration-none" aria-label="Find me on LinkedIn">
+      <a href="mailto:hello@oscargomez.dev" target="_blank" class="me-5 text-decoration-none" aria-label="Contact me">
         <i class="fa-solid fa-envelope fa-xl email-icon mouse-sm text-decoration-none d-sm-none"
         title="Contact me">
         </i>
@@ -70,7 +70,7 @@
   }
 }
 
-.github-icon, .audio-icon, .twitter-icon, .linkedin-icon {
+.github-icon, .audio-icon, .twitter-icon, .linkedin-icon, email-icon {
   color: rgba(224, 222, 255, 0.8);
   mix-blend-mode: color-dodge;
   cursor: pointer;
