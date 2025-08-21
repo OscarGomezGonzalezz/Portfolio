@@ -1,0 +1,24 @@
+import subprocess
+
+# Archivo original y salida comprimida
+input_file = "reutlingen.mp4"
+output_file = "reutlingen_compressed.mp4"
+
+# Comando FFmpeg
+command = [
+    "ffmpeg",
+    "-i", input_file,          # archivo de entrada
+    "-vf", "scale=-2:720",     # reduce resolución a 720p (mantiene proporción)
+    "-b:v", "800k",            # bitrate de video
+    "-c:v", "libx264",         # codec H.264
+    "-preset", "fast",         # velocidad de compresión
+    "-c:a", "aac",             # codec de audio AAC
+    "-b:a", "128k",            # bitrate de audio
+    "-y",                      # sobrescribir si existe
+    output_file
+]
+
+# Ejecutar FFmpeg
+subprocess.run(command)
+print(f"Video comprimido guardado en: {output_file}")
+
