@@ -4,7 +4,7 @@
     <div class="container-xxxl">
       <div class="row mt-0 mt-lg-6 justify-content-end">
         <div class="col-12 col-md-8 col-lg-7 col-xl-5 col-xxl-4 mb-4">
-          <NuxtLink class="back-link mouse-md mt-4 mt-lg-0" to="/"><i class="fa-sharp fa-solid fa-arrow-up-left fa-2x pe-3"></i>Back
+          <NuxtLink class="back-link mouse-md mt-4 mt-lg-0" to="/"><i class="fa-solid fa-arrow-left fa-2x pe-3"></i>
           </NuxtLink>
           <CodeTag class="mt-5 mb-3">contact</CodeTag>
           <h1 class="mb-4">Let's Chat</h1>

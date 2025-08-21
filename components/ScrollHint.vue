@@ -1,6 +1,8 @@
 <template>
   <NuxtLink to="/explore" class="scroll-hint mouse-md d-flex">
-    <span class="d-none d-md-inline-block">Scroll to Explore</span><span class="d-inline-block d-md-none">Tap to Explore -></span> <i class="d-none d-md-inline-block fa-light fa-computer-mouse-scrollwheel fa-2x"></i>
+    <span class="d-none d-md-inline-block">Scroll to Explore</span>
+    <span class="d-inline-block d-md-none">Tap to Explore -></span>
+    <i class="d-none d-md-inline-block fa-solid fa-computer-mouse fa-2x"></i>
   </NuxtLink>
 </template>
 

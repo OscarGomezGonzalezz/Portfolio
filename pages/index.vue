@@ -1,11 +1,14 @@
 <template>
   <section class="page">
-    
-    
-    <div class="robot-wrapper d-none d-xl-inline" >
-    <spline-viewer url="https://prod.spline.design/3Q0pEaUhhT13LgE5/scene.splinecode"></spline-viewer>
+
+
+    <div class="robot-wrapper d-none d-xl-block">
+<spline-viewer loading-anim-type="spinner-big-light" url="https://prod.spline.design/3Q0pEaUhhT13LgE5/scene.splinecode"></spline-viewer>
     </div>
-    
+    <!-- 
+   
+   
+    -->
     <ScrollHint class="scroll-hint"/>
 
   </section>
@@ -53,7 +56,9 @@ onMounted(() => {
   user-select: none;
   -webkit-user-select: none;
 }
-
+.my-center {
+  margin-left: 7vh;
+}
 .lead {
   color: #F2F2F2;
   user-select: none;
@@ -103,10 +108,33 @@ onMounted(() => {
   animation: headingCharReveal 2s cubic-bezier(0.7, 0, 0.2, 1) forwards;
 }
 .robot-wrapper {
-  justify-content: center;
-  flex: 1; /* ocupa espacio central */
-   margin-top: 18vh; /* 🔽 ajusta este valor para bajarlo */
+  position: relative;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-left: 9vh;
+
+  spline-viewer {
+    width: 100vw;     
+    aspect-ratio: 16/9;  /* 🔑 mantiene proporción exacta */
+  }
+}
+
+@media (max-width: 768px) {
+  .robot-wrapper {
+  width: 100%;
+    margin-top: 30vh; /* menos espacio arriba */
+    margin-left: 5vh;   /* centrado */
+
+
+    spline-viewer {
+      width: 100vw; 
+      aspect-ratio: 1/1; /* cuadrado para móviles */
+      max-height: 50vh;  /* que no coma toda la pantalla */
+    }
+  }
 }
 
 @keyframes headingCharReveal {
