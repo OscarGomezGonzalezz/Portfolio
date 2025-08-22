@@ -31,19 +31,19 @@
           </div>
           <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6">
             <div class="client-logo__container">
-              <img src="/skills/docker.svg" alt="Docker logo" class="client-logo mouse-md">
-              <img src="/skills/kubernetes.svg" alt="Dolby logo" class="client-logo mouse-md">
-              <img src="/skills/keycloak.svg" alt="ABM logo" class="client-logo mouse-md">
-              <img src="/skills/spring.svg" alt="Steward logo" class="client-logo mouse-md">
-              <img src="/skills/java.svg" alt="MIT logo" class="client-logo mouse-md">
-              <img src="/skills/terraform.svg" alt="Alaska Airlines logo" class="client-logo mouse-md">
-              <img src="/skills/python.svg" alt="Stanley Black and Decker logo"
+              <img src="https://oscargomez.dev/skills/docker.svg" alt="Docker logo" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/skills/kubernetes.svg" alt="Dolby logo" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/skills/keycloak.svg" alt="ABM logo" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/skills/spring.svg" alt="Steward logo" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/skills/java.svg" alt="MIT logo" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/skills/terraform.svg" alt="Alaska Airlines logo" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/skills/python.svg" alt="Stanley Black and Decker logo"
                    class="client-logo mouse-md">
-              <img src="/skills/nginx.svg" alt="Panera Bread logo"
+              <img src="https://oscargomez.dev/skills/nginx.svg" alt="Panera Bread logo"
                    class="client-logo mouse-md">
-              <img src="/skills/github-actions.svg" alt="University of Georgia logo"
+              <img src="https://oscargomez.dev/skills/github-actions.svg" alt="University of Georgia logo"
                    class="client-logo mouse-md">
-              <img src="/skills/iam.svg" alt="MCASD logo" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/skills/iam.svg" alt="MCASD logo" class="client-logo mouse-md">
             </div>
           </div>
           <h3 style="margin-top: 5vh"><a href="https://github.com/OscarGomezGonzalezz" target="_blank" rel="noopener noreferrer">Some of my personal projects</a></h3>
