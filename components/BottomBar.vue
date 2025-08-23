@@ -95,7 +95,7 @@
   }
   .status-indicator {
    position: relative;
-  top: -0.15vh; // mueve el indicador hacia arriba
+  top: -0.00vh; // mueve el indicador hacia arriba
   }
 }
 

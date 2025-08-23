@@ -202,7 +202,7 @@ gsap.set(proxy, { x: initialX });
   const updatePosition = () => {
     if (!isInteracting) { // Only update position if user is not interacting
       const currentX = parseFloat(gsap.getProperty(proxy, "x")) || 0;
-      const newX = currentX - (40 / 60);
+      const newX = currentX - (20 / 60);
 
       gsap.set(proxy, {x: newX % wrapWidth});
       updateAnimation();
