@@ -9,7 +9,7 @@
             <i class="fa-solid fa-arrow-right fa-2x pe-3"></i></NuxtLink>
             <CodeTag class="mt-5 mb-5 d-none d-lg-block">about</CodeTag>
             <div class="d-flex flex-row align-items-center mb-5">
-              <img src="~assets/images/headshot.jpg" alt="Hey I'm Simon" class="headshot me-4 me-lg-5">
+              <img src="~assets/images/headshot.jpg" alt="Hey I'm Óscar" class="headshot me-4 me-lg-5">
             </div>
             <h2 class="my-4" itemprop="description">Hi there 👋 <br>  It's Óscar here</h2>
             <div itemprop="knowsAbout">
@@ -44,6 +44,7 @@
               <img src="https://oscargomez.dev/skills/github-actions.svg" alt="University of Georgia logo"
                    class="client-logo mouse-md">
               <img src="https://oscargomez.dev/skills/iam.svg" alt="MCASD logo" class="client-logo mouse-md">
+              
             </div>
           </div>
           <h3 style="margin-top: 5vh"><a href="https://github.com/OscarGomezGonzalezz" target="_blank" rel="noopener noreferrer">Some of my personal projects</a></h3>
@@ -67,11 +68,11 @@
 <script setup>
 
 useHead({
-  title: 'Hey I\'m Simon — a front-end engineer with 15+ years in leading and crafting innovative web projects. | Marchant Web',
+  title: 'Hi there, It´s Óscar here — a Software Engineer specialized in Cloud Security.',
   meta: [
     {
       name: 'description',
-      content: 'Hey I\'m Simon — a front-end engineer with 15+ years in leading and crafting innovative web projects.'
+      content: 'Hi there, It´s Óscar here — a Software Engineer specialized in Cloud Security.'
     }
   ],
   bodyAttrs: {

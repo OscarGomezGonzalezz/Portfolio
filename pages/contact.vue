@@ -25,23 +25,6 @@ Feel free to drop me a message, I don’t bite (promise).</p>
   </section>
 </template>
 
-<script setup>
-
-useHead({
-  title: 'Let\'s Chat - Schedule a Discovery Session | Marchant Web',
-  meta: [
-    {
-      name: 'description',
-      content: 'Schedule a one-hour initial discovery session for your project, or reach out via email.'
-    }
-  ],
-  bodyAttrs: {
-    class: 'enable-scroll fixed-webgl'
-  }
-});
-
-</script>
-
 <style lang="scss" scoped>
 
 .page-enter-active {

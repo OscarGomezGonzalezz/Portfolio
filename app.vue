@@ -52,7 +52,7 @@ useHead({
     {
       hid: 'og:url',
       name: 'og:url',
-      content: 'https://marchantweb.com'
+      content: 'https://oscargomez.dev'
     },
     {
       hid: 'og:title',
@@ -67,7 +67,7 @@ useHead({
     {
       hid: 'og:image',
       name: 'og:image',
-      content: 'https://marchantweb.com/cover.jpg'
+      content: 'https://oscargomez.dev/cover.jpg'
     },
     {
       hid: 'og:image:alt',
@@ -77,7 +77,7 @@ useHead({
     {
       hid: 'og:description',
       name: 'og:description',
-      content: 'Hey I\'m Simon — a front-end engineer with 15+ years in leading and crafting innovative web projects.'
+      content: 'Hi there, It´s Óscar here — a Software Engineer specialized in Cloud Security'
     },
     {
       hid: 'og:site_name',
@@ -102,7 +102,7 @@ useHead({
     {
       hid: 'twitter:description',
       name: 'twitter:description',
-      content: 'Hey I’m Simon, an independent interactive developer based in Orlando, Florida.'
+      content: 'Hi there, It´s Óscar here — a Software Engineer specialized in Cloud Security'
     },
     {
       hid: 'twitter:image:alt',
@@ -111,8 +111,7 @@ useHead({
     }
   ],
   link: [
-    {rel: 'icon', type: 'image/svg', href: '/icon-notext.svg'},
-    {rel: 'preconnect', href: 'https://api.marchantweb.com'},
+    {rel: 'icon', type: 'image/svg', href: '/logo.svg'},
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'
