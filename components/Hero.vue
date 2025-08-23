@@ -436,6 +436,11 @@ body.fixed-webgl {
   @media screen and (max-width: 1200px) {
     display: none;
   }
+
+  @media screen and (min-width: 2000px) {
+   bottom: 25vw;
+  right: 15vw;
+  }
 }
 
 .import-from-orlando {
@@ -445,6 +450,11 @@ body.fixed-webgl {
 
   @media screen and (max-width: 1200px) {
     display: none;
+  }
+
+  @media screen and (min-width: 2000px) {
+   bottom: 40vw;
+  right: 15vw;
   }
 }
 
@@ -456,6 +466,10 @@ body.fixed-webgl {
   @media screen and (max-width: 1200px) {
     display: none;
   }
+  @media screen and (min-width: 2000px) {
+   bottom: 25vw;
+  right: 15vw;
+  }
 }
 
 .click-discovery {
@@ -465,6 +479,10 @@ body.fixed-webgl {
 
   @media screen and (max-width: 1200px) {
     display: none;
+  }
+  @media screen and (min-width: 2000px) {
+   bottom: 17vw;
+  right: 4vw;
   }
 }
 

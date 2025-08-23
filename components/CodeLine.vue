@@ -34,7 +34,7 @@ const codeLineClasses = computed(() => {
   flex-wrap: nowrap;
   align-items: center;
   width: fit-content;
-  border-radius: 5px;
+  border-radius: 0.7vh;
   overflow: hidden;
 
   .code-line__number {
@@ -47,7 +47,7 @@ const codeLineClasses = computed(() => {
     font-weight: 400;
     font-size: 0.9rem;
     transform: scale(0);
-    border-radius: 5px;
+    border-radius: 0.7vh;
     animation: scaleNumberUp 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
   }
 
@@ -189,14 +189,46 @@ const codeLineClasses = computed(() => {
 @keyframes scaleNumberUp {
   0% {
     transform: scale(0);
-    border-radius: 5px;
+    border-radius: 0.7vh;
   }
   95%{
-    border-radius: 5px;
+    border-radius: 0.7vh;
   }
   100% {
     transform: scale(1);
-    border-radius: 5px 0 0 5px;
+    border-radius: 0.7vh 0 0 0.7vh;
+  }
+}
+@media (min-width: 1440px) {
+  .code-line {
+  border-radius: 0.7vh;
+    .code-line__number {
+      padding: 1vh 1.5vw;      // padding proporcional
+      font-size: 1.5vh;        // escala según altura de la pantalla
+      
+    }
+
+    .code-line__code {
+      padding: 1vh 1.5vw;      // padding proporcional
+      font-size: 1.5vh;        // escala según altura
+      box-shadow: rgba(50, 50, 93, 0.25) 0 1vh 0.5vh -0.6vh;
+
+      :deep(span) {
+        font-size: 1.5vh;
+
+        &:after {
+          width: 0.5vw;       // cursor proporcional
+        }
+      }
+
+      :deep(.code--purple):after,
+      :deep(span.code--yellow):after,
+      :deep(span.code--green):after,
+      :deep(span.code--orange):after {
+        height: 100%;          // ya es relativo
+        width: 0.5vw;          // cursor proporcional
+      }
+    }
   }
 }
 

@@ -145,4 +145,73 @@ useHead({
   }
 }
 
+@media (min-width: 1440px) {
+  .back-link {
+    top: 3vh;       // posición proporcional
+    right: 2vw;
+    font-size: 2.5vh;
+  }
+
+  .headshot {
+    width: 10vw;    // crece proporcionalmente con la pantalla
+    border-radius: 3%;
+  }
+
+  h2 {
+    font-size: 3vh;
+    line-height: 3.5vh;
+  }
+
+  p {
+    font-size: 1.8vh;
+    line-height: 2.5vh;
+    max-width: 70vw; // ocupa más espacio horizontal
+  }
+
+  h3 {
+    font-size: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+
+  .action-button {
+    font-size: 1.8vh;         // texto proporcional
+    padding: 1.2vh 3vw;       // padding proporcional vertical y horizontal
+    border-radius: 0.5vh;     // bordes proporcionalmente más grandes
+    box-shadow: rgba(50, 50, 93, 0.25) 0 1.5vh 0.7vh -0.6vh; // sombra proporcional
+
+    &:hover {
+      transform: translateY(-0.5vh);  // efecto hover proporcional
+      box-shadow: rgba(50, 50, 93, 0.15) 0 2vh 1vh 0;
+    }
+
+    :deep(i) {
+      margin-right: 1.2vw;    // separación proporcional entre icono y texto
+      font-size: 2vh;          // icono proporcional
+    }
+  }
+
+  .client-logo__container {
+    gap: 2vw;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .client-logo {
+    width: 6vw; // escala proporcionalmente
+  }
+
+  .code-tag {
+    font-size: 1.5vh;
+    padding: 0.5vh 1.5vw;
+    margin-top: 2vh;
+    margin-bottom: 1.5vh;
+  }
+
+  .col-12.col-md-8.col-lg-7.col-xl-6.col-xxl-5,
+  .col-12.col-md-8.col-lg-7.col-xl-6.col-xxxl-6 {
+    max-width: 70vw; // hace que el contenido ocupe más horizontalmente
+  }
+}
+
+
 </style>

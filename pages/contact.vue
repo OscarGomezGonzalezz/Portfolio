@@ -15,7 +15,6 @@ Feel free to drop me a message, I don’t bite (promise).</p>
             Let's chat
           </ActionButton>
           <hr class="mb-6">
-          <h3 class="mb-3">Alternate contact options</h3>
           <p class="mb-4">You can find me posting occasionally on <a href="https://www.linkedin.com/in/oscargomezgonzalez/" target="blank" class="article__followlink mouse-sm">LinkedIn</a>.</p>
         </div>
         <div class="col-1 d-none d-xl-block"></div>
@@ -64,5 +63,44 @@ Feel free to drop me a message, I don’t bite (promise).</p>
     min-height: unset;
   }
 }
+
+@media (min-width: 1440px) {
+  .back-link {
+    top: 3vh;    // reemplaza 40px
+    left: 2vw;   // reemplaza 60px
+    font-size: 2.5vh; // opcional: si quieres que el icono crezca con la pantalla
+  }
+  .code-tag {
+    font-size: 1.3vh;       
+    padding-bottom: 1vh;
+  }
+
+  .container-xxxl p.mb-4:first-of-type { 
+    max-width: 90vw;
+  }
+
+  h1 {
+    font-size: 3vh;  // escala el título principal
+  }
+
+  p, .mb-4, .mb-6 {
+    font-size: 1.8vh; // escala párrafos y márgenes
+  }
+
+  ActionButton {
+    font-size: 1.8vh; // si el texto del botón crece con la pantalla
+    padding: 1vh 2vw; // padding proporcional
+  }
+
+  hr {
+    margin-bottom: 3vh; // escalado proporcional
+  }
+
+  h3 {
+    font-size: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+
 
 </style>
