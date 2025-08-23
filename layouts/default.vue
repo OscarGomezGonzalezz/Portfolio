@@ -79,6 +79,7 @@ const showNavigation = computed(() => {
   }
 }
 
+
 .bottom-bar-enter-active, .bottom-bar-leave-active {
   transition: all 1s;
 }

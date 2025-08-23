@@ -24,6 +24,12 @@
     justify-content: flex-start;
   }
 
+  // Media query para pantallas >= 1440px
+  @media (min-width: 1440px) {
+    width: 30vh;           // ancho proporcional al viewport
+    padding-bottom: 3vh;    // padding proporcional a la altura
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -35,6 +41,10 @@
     display: block;
     animation: loopingBorder 2s linear infinite;
     transform-origin: 0 center;
+
+    @media (min-width: 1440px) {
+      width: 5vw;          // la línea también escala proporcionalmente
+    }
   }
 
   span {
@@ -46,6 +56,11 @@
     transform: translateY(20px);
     animation: animateContentIn 1s ease-in-out forwards;
     animation-delay: 1s;
+
+    @media (min-width: 1440px) {
+      margin-right: 2vw;   // margen proporcional
+      font-size: 1.5vw;
+    }
   }
 
   i {
@@ -55,8 +70,13 @@
     transform: translateY(20px);
     animation: animateContentIn 1s ease-in-out forwards;
     animation-delay: 1s;
+
+    @media (min-width: 1440px) {
+      font-size: 3.5vh;
+    }
   }
 }
+
 
 @keyframes animateContentIn {
   0% {

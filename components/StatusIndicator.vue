@@ -32,7 +32,7 @@ const status = "Feel free to reach"
 .status-indicator {
   color: #AFBFD6;
   cursor: default;
-  font-size: 0.9rem;
+  font-size: 1.5vh;
 
   &.status-indicator--dark{
     color: #6e829c;
@@ -41,11 +41,11 @@ const status = "Feel free to reach"
 
 .status-indicator__light {
   display: inline-block;
-  width: 9px;
-  height: 9px;
+  width: 0.9vh;
+  height: 0.9vh;
   border-radius: 50%;
   background-color: #1BBE8D;
-  margin-right: 8px;
+  margin-right: 0.8vh;
   position: relative;
 
   &:before {

@@ -1,12 +1,11 @@
 <template>
   <section class="page">
-
+    <!-- 
 
     <div class="robot-wrapper d-none d-xl-block">
 <spline-viewer loading-anim-type="spinner-big-light" url="https://prod.spline.design/3Q0pEaUhhT13LgE5/scene.splinecode"></spline-viewer>
     </div>
-    <!-- 
-   
+
    
     -->
     <ScrollHint class="scroll-hint"/>
@@ -49,6 +48,10 @@ onMounted(() => {
     right: unset;
     left: 40px;
     overflow: hidden;
+  }
+  @media (min-width: 1440px) {
+    bottom: 12vh;
+  right: 6vh;
   }
 }
 
