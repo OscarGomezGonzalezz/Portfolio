@@ -47,6 +47,7 @@
       <div class="timeline">
         <span class="timeline-date">{{ currentPortfolioItem.date }}</span>
       </div>
+
       <div class="meta">
         <h1 class="card-intro" v-html="currentPortfolioItem.intro"></h1>
         <h1 class="card-content" v-html="currentPortfolioItem.content"></h1>
@@ -159,25 +160,30 @@ onMounted(() => {
   font-size: 1vw;
 }
 
-@media (max-width: 1024px){
-/* Ajuste del contenedor del timeline si es necesario */
-  .timeline {
-    top: 7vh; /* un poco más separado de la parte superior */
-  }
-
-  /* Fechas centradas sobre la línea */
+@media (max-width: 2600px){
   .timeline-date {
-    padding: 1vw 2vh;   /* más grande que 0.4vw 1.4vh */
-    border-radius: 1vw; /* más grande que 0.6vw */
-    font-size: 2vw;     /* más grande que 1vw */
-    box-shadow: 0 0.4vw 1vh rgba(0,0,0,0.05); /* opcional, más prominente */
+    padding: 1vw 1.5vh;  
+    border-radius: 2vw; 
+    font-size: 2vw;     
+    box-shadow: 0 0.4vw 1vh rgba(0,0,0,0.05);
   }
-
   /* Línea horizontal si quieres que sea más visible */
   .timeline::before {
-    height: 0.3vh; /* antes 0.2vh */
+    height: 0.3vh;
   }
+}
 
+@media (max-width: 600px){
+  .timeline-date {
+    padding: 2vw 3vh;  
+    border-radius: 2vw; 
+    font-size: 4vw;     
+    box-shadow: 0 0.4vw 1vh rgba(0,0,0,0.05);
+  }
+  /* Línea horizontal si quieres que sea más visible */
+  .timeline::before {
+    height: 0.3vh;
+  }
 }
 
 .card-intro {
@@ -185,12 +191,18 @@ onMounted(() => {
   font-weight: 600;
   color: #222;
   line-height: 1.4;
+  @media (min-width: 1024px){
+  font-size:2vh;
+  }
 }
 
 .card-content {
   font-size: 0.9rem;
   line-height: 1.3;
   color: #555;
+  @media (min-width: 1024px){
+  font-size:2vh;
+  }
 }
 
 /* enlaces dentro del contenido */
@@ -379,6 +391,9 @@ onMounted(() => {
   position: absolute; /* Para que quede arriba */
   top: 0.9vh;
   left: 0.5vw;
+  @media(max-width:1024px){
+    left: 1vw;
+  }
 }
 
 .mac-controls span {
@@ -386,6 +401,16 @@ onMounted(() => {
   height: 0.7vw;
   border-radius: 50%;
   display: inline-block;
+
+  @media(max-width:1024px){
+    width: 1vw;
+    height: 1vw;
+  }
+  @media(max-width:600px){
+    width: 2vw;
+    height: 2vw;
+  }
+
 }
 
 .mac-controls .close {
