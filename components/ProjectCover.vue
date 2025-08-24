@@ -127,7 +127,7 @@ onMounted(() => {
 /* Contenedor del timeline */
 .timeline {
   position: absolute;
-  top: 5vh;       /* altura fija desde la parte superior */
+  top: 2vh;       /* altura fija desde la parte superior */
   left: 0;
   width: 100%;
   text-align: center;
