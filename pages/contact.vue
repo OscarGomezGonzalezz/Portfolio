@@ -80,10 +80,10 @@ Feel free to drop me a message, I don’t bite (promise).</p>
   }
 
   h1 {
-    font-size: 3vh;  // escala el título principal
+    font-size: 2.5vw;
   }
 
-  p, .mb-4, .mb-6 {
+  p, .mb-6 {
     font-size: 1.8vh; // escala párrafos y márgenes
   }
 

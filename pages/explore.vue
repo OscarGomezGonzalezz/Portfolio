@@ -20,7 +20,8 @@ const portfolioData = [
     "videoMP4": "",
     "cover": "https://oscargomez.dev/captures/beginning.webp",
     "intro": "I didn’t always see myself in tech. Before university, computers were just… computers. I used them, but I never imagined building with them.",
-    "content": "Short on time? Take a peek at <a href=\"https://www.oscargomez.dev/about/\" target=\"_blank\" rel=\"noopener noreferrer\">my quick resume</a>. If not, let's dive back into my journey."
+    "content": "Short on time? Take a peek at <a href=\"https://www.oscargomez.dev/about/\" target=\"_blank\" rel=\"noopener noreferrer\">my quick resume</a>. If not, let's dive back into my journey.",
+    "date": "2004-2021"
   },
   {
     "title": "The Curiosity Spark",
@@ -31,7 +32,8 @@ const portfolioData = [
     "videoMP4": "https://oscargomez.dev/videos/sevilla_compressed.mp4",
     "cover": "https://oscargomez.dev/captures/sevilla_cover.webp",
     "intro": "Everything changed in my first year at Universidad de Sevilla. Algorithms, OOP, networking — suddenly, I was asking questions like, “How does the internet even work?” and “How do two computers start talking to each other?” Curiosity turned into obsession",
-    "content": "A new city and new friends at first felt overwhelming — but by the second year I fell for my studies and started achieving top grades."
+    "content": "A new city and new friends at first felt overwhelming — but by the second year I fell for my studies and started achieving top grades.",
+    "date": "2022-Present"
   },
   {
     "title": "Crossing Borders, Expanding Skills",
@@ -42,7 +44,8 @@ const portfolioData = [
     "videoMP4": "https://oscargomez.dev/videos/reutlingen.mp4",
     "cover": "https://oscargomez.dev/captures/germany.webp",
     "intro": "My exchange year at Hochschule Reutlingen in Germany took things further. I deepened my knowledge in Cloud Technologies, Web & Mobile Programming, and Machine Learning — all while travelling, meeting new people, and of course drinking a lot of beer.",
-    "content": "Not only I improved my english and german, but also continued with this passion, and I graduated in the top 5% of my class with a 1.47/5 (First Class Honours)." 
+    "content": "Not only I improved my english and german, but also continued with this passion, and I graduated in the top 5% of my class with a 1.47/5 (First Class Honours).",
+    "date": "2024-2025"
   },
   {
     "title": "Beyond the Classroom",
@@ -52,8 +55,9 @@ const portfolioData = [
     "videoWebm": "",
     "videoMP4": "https://oscargomez.dev/videos/esb_compressed.mp4",
     "cover": "https://oscargomez.dev/captures/esb_cover.webp",
-    "intro": "In the first semester of my exchange, I joined the <a href=\"https://esbstudentconsulting.de/\" target=\"_blank\" rel=\"noopener noreferrer\">ESB Student Consulting Club</a> and met many interesting, ambitious people.",
-    "content": "I conducted a market analysis of generative and specialized AI solutions in sustainability, providing potential use cases for a $90B client."
+    "intro": "In the first semester of my exchange, I joined the <a href=\"https://esbstudentconsulting.de/\" target=\"_blank\" rel=\"noopener noreferrer\">ESB Student Consulting Club</a> and met many interesting and ambitious people.",
+    "content": "I conducted a market analysis of generative and specialized AI solutions in sustainability, providing potential use cases for a $90B client.",
+    "date": " October 2024-March 2025"
   },
   {
     "title": "Turning Curiosity Into Impact",
@@ -64,7 +68,8 @@ const portfolioData = [
     "videoMP4": "",
     "cover": "https://oscargomez.dev/captures/research.webp",
     "intro": "By the second semester, my professor offered me a paid student assistant role in his research project. That’s when my curiosity evolved from “how things work” to “how to build and secure them.”",
-    "content": "I integrated and automated features of an Identity Access Management (IAM) system into the global <a href=\"https://www.forschungspraxennetz-bw.de/\" target=\"_blank\" rel=\"noopener noreferrer\">FoPraNet-BW Project</a>, working alongside Prof. Dr. Christian Thies and Dipl.-Ing. Sven Dörflinger."
+    "content": "I integrated and automated features of an Identity Access Management (IAM) system into the global <a href=\"https://www.forschungspraxennetz-bw.de/\" target=\"_blank\" rel=\"noopener noreferrer\">FoPraNet-BW Project</a>, working alongside Prof. Dr. Christian Thies and Dipl.-Ing. Sven Dörflinger.",
+    "date": "May 2025-August 2025"
   },
   {
     "title": "Where I’m Headed",
@@ -75,7 +80,8 @@ const portfolioData = [
     "videoMP4": "",
     "cover": "https://oscargomez.dev/captures/now.webp",
     "intro":"Outside of school, I’ve self-studied cloud & cybersecurity and built several hands-on projects, connecting my love for learning with real-world experimentation.",
-    "content": "Check my <a href=\"https://github.com/oscargomezgonzalezz\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> for a clearer view of what I am talking about. <br> In case you want to <a href=\"mailto:hello@oscargomez.dev\" target=\"_blank\" rel=\"noopener noreferrer\">contact me <i class=\"fas fa-envelope\"></i></a>"
+    "content": "Check my <a href=\"https://github.com/oscargomezgonzalezz\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> for a clearer view of what I am talking about. <br> In case you want to <a href=\"mailto:hello@oscargomez.dev\" target=\"_blank\" rel=\"noopener noreferrer\">contact me <i class=\"fas fa-envelope\"></i></a>",
+    "date": "Present"
   }
   ]
 

@@ -38,9 +38,19 @@
 
     <!-- Show details if showDetails is true -->
     <div v-if="showDetails" class="project-cover__details project-cover__fade" @click="toggleDetails">
+      <div class="mac-controls">
+        <span class="close"></span>
+        <span class="minimize"></span>
+        <span class="maximize"></span>
+      </div>
+      <!-- Timeline line con fecha -->
+      <div class="timeline">
+        <span class="timeline-date">{{ currentPortfolioItem.date }}</span>
+      </div>
       <div class="meta">
         <h1 class="card-intro" v-html="currentPortfolioItem.intro"></h1>
         <h1 class="card-content" v-html="currentPortfolioItem.content"></h1>
+        
       </div>
     </div>
   </article>
@@ -113,6 +123,62 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+/* Contenedor del timeline */
+.timeline {
+  position: absolute;
+  top: 5vh;       /* altura fija desde la parte superior */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;     /* encima del contenido */
+}
+/* Línea horizontal completa */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.2vh;
+  background: #ddd;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Fecha centrada sobre la línea */
+.timeline-date {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  padding: 0.4vw 1.4vh;
+  color: #333;
+  font-weight: 500;
+  border-radius: 0.6vw;
+  z-index: 2;
+  box-shadow: 0 0.2vw 0.6vh rgba(0,0,0,0.05);
+  font-size: 1vw;
+}
+
+@media (max-width: 1024px){
+/* Ajuste del contenedor del timeline si es necesario */
+  .timeline {
+    top: 7vh; /* un poco más separado de la parte superior */
+  }
+
+  /* Fechas centradas sobre la línea */
+  .timeline-date {
+    padding: 1vw 2vh;   /* más grande que 0.4vw 1.4vh */
+    border-radius: 1vw; /* más grande que 0.6vw */
+    font-size: 2vw;     /* más grande que 1vw */
+    box-shadow: 0 0.4vw 1vh rgba(0,0,0,0.05); /* opcional, más prominente */
+  }
+
+  /* Línea horizontal si quieres que sea más visible */
+  .timeline::before {
+    height: 0.3vh; /* antes 0.2vh */
+  }
+
+}
 
 .card-intro {
   font-size: 1rem;
@@ -163,6 +229,7 @@ onMounted(() => {
   text-align: center;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 
@@ -305,4 +372,31 @@ onMounted(() => {
   }
 }
 
+.mac-controls {
+  display: flex;
+  gap: 0.5vh;
+  padding: 0.1vw;
+  position: absolute; /* Para que quede arriba */
+  top: 0.9vh;
+  left: 0.5vw;
+}
+
+.mac-controls span {
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mac-controls .close {
+  background: #ff5f56; /* rojo */
+}
+
+.mac-controls .minimize {
+  background: #ffbd2e; /* amarillo */
+}
+
+.mac-controls .maximize {
+  background: #27c93f; /* verde */
+}
 </style>
