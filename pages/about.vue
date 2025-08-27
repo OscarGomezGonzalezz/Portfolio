@@ -53,15 +53,15 @@
   <div class="client-logo__container d-flex justify-content-around">
     <div class="language">
       <img src="https://oscargomez.dev/languages/spain.png" alt="Spanish" class="client-logo mouse-md">
-      <span class="language-level">Native</span>
+      <span class="language-level client-logo mouse-md">Native</span>
     </div>
     <div class="language">
       <img src="https://oscargomez.dev/languages/english.png" alt="English" class="client-logo mouse-md">
-      <span class="language-level">C1</span>
+      <span class="language-level client-logo mouse-md">C1</span>
     </div>
     <div class="language">
       <img src="https://oscargomez.dev/languages/german.png" alt="German" class="client-logo mouse-md">
-      <span class="language-level">A2</span>
+      <span class="language-level client-logo mouse-md">A2</span>
     </div>
   </div>
 </div>
