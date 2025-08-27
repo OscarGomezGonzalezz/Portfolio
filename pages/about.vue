@@ -49,14 +49,23 @@
           </div>
 
           <h3 class="mt-5 mb-5">Languages:</h3>
-          <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6">
-            <div class="client-logo__container">
-              <img src="https://oscargomez.dev/languages/spain.png" alt="Spanish" class="client-logo mouse-md">
-              <img src="https://oscargomez.dev/languages/english.png" alt="English" class="client-logo mouse-md">
-              <img src="https://oscargomez.dev/languages/german.png" alt="German" class="client-logo mouse-md">
-              
-            </div>
-          </div>
+         <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6">
+  <div class="client-logo__container d-flex justify-content-around">
+    <div class="language">
+      <img src="https://oscargomez.dev/languages/spain.png" alt="Spanish" class="client-logo mouse-md">
+      <span class="language-level">Native</span>
+    </div>
+    <div class="language">
+      <img src="https://oscargomez.dev/languages/english.png" alt="English" class="client-logo mouse-md">
+      <span class="language-level">C1</span>
+    </div>
+    <div class="language">
+      <img src="https://oscargomez.dev/languages/german.png" alt="German" class="client-logo mouse-md">
+      <span class="language-level">A2</span>
+    </div>
+  </div>
+</div>
+
           <h3 style="margin-top: 5vh"><a href="https://github.com/OscarGomezGonzalezz" target="_blank" rel="noopener noreferrer">Some of my personal projects</a></h3>
           <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5 mb-4 mb-lg-8">
             
@@ -99,6 +108,14 @@ useHead({
   transition-delay: 1.7s;
 }
 
+.language {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
 .page-leave-active {
   transition: all 1s;
 }
@@ -119,7 +136,14 @@ useHead({
   @media screen and (max-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
   }
-
+.language-level {
+  background-color: #5C4FE6; /* Color del badge */
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
   &:hover {
     .client-logo:not(:hover) {
       opacity: 0.5;
