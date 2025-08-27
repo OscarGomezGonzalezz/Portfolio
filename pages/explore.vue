@@ -204,11 +204,22 @@ gsap.set(proxy, { x: initialX });
     preventDefault: true,
   });
 
+
   // Lastly, let's get an ambient scrolling motion going on when the user is not interacting with the slider
+
+  //computing the scrolling speed depending of the wide of the screen
+  const getSpeed = () => {
+  const width = window.innerWidth;
+
+  if (width < 600) return 5;   // pantallas pequeñas
+  if (width < 1200) return 10; // pantallas medianas
+  return 20;                   // pantallas grandes
+};
   const updatePosition = () => {
     if (!isInteracting) { // Only update position if user is not interacting
       const currentX = parseFloat(gsap.getProperty(proxy, "x")) || 0;
-      const newX = currentX - (20 / 60);
+      const speed = getSpeed();
+      const newX = currentX - (speed / 60); //This sets the speed of the automated scrolling
 
       gsap.set(proxy, {x: newX % wrapWidth});
       updateAnimation();

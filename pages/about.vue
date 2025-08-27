@@ -47,6 +47,16 @@
               
             </div>
           </div>
+
+          <h3 class="mt-5 mb-5">Languages:</h3>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6">
+            <div class="client-logo__container">
+              <img src="https://oscargomez.dev/languages/spain.png" alt="Spanish" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/languages/english.png" alt="English" class="client-logo mouse-md">
+              <img src="https://oscargomez.dev/languages/german.png" alt="German" class="client-logo mouse-md">
+              
+            </div>
+          </div>
           <h3 style="margin-top: 5vh"><a href="https://github.com/OscarGomezGonzalezz" target="_blank" rel="noopener noreferrer">Some of my personal projects</a></h3>
           <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5 mb-4 mb-lg-8">
             
@@ -133,6 +143,21 @@ useHead({
     position: relative;
     top: 0;
     left: 0;
+  }
+}
+.languages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+
+  li {
+    font-size: 1.8vh;
+    line-height: 2.5vh;
+    margin-bottom: 0.8rem;
+  }
+
+  strong {
+    color: #212A36;
   }
 }
 
