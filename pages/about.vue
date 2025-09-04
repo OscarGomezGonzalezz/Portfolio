@@ -51,7 +51,7 @@
 
           <h2 class="mt-5 mb-5">Languages:</h2>
          <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6">
-  <div class="client-logo__container">
+  <div class="client-logo__container ms-2">
     <div class="language">
       <img src="https://oscargomez.dev/languages/spain.png" alt="Spanish" class="client-logo mouse-md">
       <span class="language-level client-logo mouse-md">Native</span>

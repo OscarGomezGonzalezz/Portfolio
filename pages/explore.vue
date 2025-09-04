@@ -80,7 +80,7 @@ const portfolioData = [
     "videoMP4": "",
     "cover": "https://oscargomez.dev/captures/now.webp",
     "intro":"Outside of school, I’ve self-studied cloud & cybersecurity and built several hands-on projects, connecting my love for learning with real-world experimentation.",
-    "content": "Check my <a href=\"https://github.com/oscargomezgonzalezz\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> for a clearer view of what I am talking about. <br> In case you want to <a href=\"mailto:hello@oscargomez.dev\" target=\"_blank\" rel=\"noopener noreferrer\">contact me <i class=\"fas fa-envelope\"></i></a>",
+    "content": "Check more information about <a href=\"https://oscargomez.dev/about\" target=\"_blank\" rel=\"noopener noreferrer\">my skills and projects </a>",
     "date": "Present"
   }
   ]
