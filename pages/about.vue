@@ -3,7 +3,7 @@
 
     <div class="container-xxxl">
       <div class="row mt-0 mt-lg-6">
-        <main class="d-flex flex-column" itemscope itemtype="https://schema.org/Person">
+        <main class="d-flex flex-column">
           <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5 mb-4">
             <NuxtLink class="back-link mouse-md mt-4 mt-lg-0 mb-5 mb-lg-0 d-block text-end text-md-start" to="/">
             <i class="fa-solid fa-arrow-right fa-2x pe-3"></i></NuxtLink>
@@ -11,7 +11,7 @@
             <div class="d-flex flex-row align-items-center mb-5">
               <img src="~assets/images/headshot.jpg" alt="Hey I'm Óscar" class="headshot me-4 me-lg-5">
             </div>
-            <h2 class="my-4" itemprop="description">Hi there 👋 <br>  It's Óscar here</h2>
+            <h1 class="my-4" itemprop="description">Hi there 👋 <br>  It's Óscar here</h1>
             <div itemprop="knowsAbout">
             <p>
             Quick story: I studied Software Engineering at Universidad de Sevilla (2022–26), and did a 2024–25 exchange year at Hochschule Reutlingen.
@@ -27,12 +27,13 @@
             and projects to my portfolio than the expected.
             </p>
             </div>
-            <h3 class="mt-5 mb-3">Some of these skills are:</h3>
+            <h2 class="mt-5 mb-3">Some of these skills are:</h2>
           </div>
-          <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6">
-            <div class="client-logo__container">
-              <img src="https://oscargomez.dev/skills/docker.svg" alt="Docker logo" class="client-logo mouse-md">
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6 ">
+            <div class="client-logo__container ms-4">
               <img src="https://oscargomez.dev/skills/kubernetes.svg" alt="Dolby logo" class="client-logo mouse-md">
+
+              <img src="https://oscargomez.dev/skills/docker.svg" alt="Docker logo" class="client-logo mouse-md ms-2">
               <img src="https://oscargomez.dev/skills/keycloak.svg" alt="ABM logo" class="client-logo mouse-md">
               <img src="https://oscargomez.dev/skills/spring.svg" alt="Steward logo" class="client-logo mouse-md">
               <img src="https://oscargomez.dev/skills/java.svg" alt="MIT logo" class="client-logo mouse-md">
@@ -48,9 +49,9 @@
             </div>
           </div>
 
-          <h3 class="mt-5 mb-5">Languages:</h3>
+          <h2 class="mt-5 mb-5">Languages:</h2>
          <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxxl-6">
-  <div class="client-logo__container d-flex justify-content-around">
+  <div class="client-logo__container">
     <div class="language">
       <img src="https://oscargomez.dev/languages/spain.png" alt="Spanish" class="client-logo mouse-md">
       <span class="language-level client-logo mouse-md">Native</span>
@@ -66,7 +67,7 @@
   </div>
 </div>
 
-          <h3 style="margin-top: 5vh"><a href="https://github.com/OscarGomezGonzalezz" target="_blank" rel="noopener noreferrer">Some of my personal projects</a></h3>
+          <h2 style="margin-top: 5vh"><a href="https://github.com/OscarGomezGonzalezz" target="_blank" rel="noopener noreferrer">Some of my personal projects</a></h2>
           <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5 mb-4 mb-lg-8">
             
             <p class="mb-5">
@@ -126,7 +127,7 @@ useHead({
 
 .client-logo__container {
   display: grid;
-  gap: 15px;
+  gap: 1.5vw;
   grid-template-columns: repeat(5, 1fr);
 
   @media screen and (max-width: 1200px) {
@@ -137,12 +138,13 @@ useHead({
     grid-template-columns: repeat(3, 1fr);
   }
 .language-level {
-  background-color: #5C4FE6; /* Color del badge */
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  color: #5C4FE6;
+  border-radius: 30%;
+  font-size: 15px;
+  font-weight: 700;
+  @media (min-width: 1024px){
+  font-size: 1.5vw;
+  }
 }
   &:hover {
     .client-logo:not(:hover) {
@@ -203,7 +205,7 @@ useHead({
 
   .headshot {
     width: 10vw;    // crece proporcionalmente con la pantalla
-    border-radius: 3%;
+    border-radius: 40%;
   }
 
   h2 {
@@ -212,7 +214,7 @@ useHead({
   }
 
   p {
-    font-size: 1.8vh;
+    font-size: 2vh;
     line-height: 2.5vh;
     max-width: 70vw; // ocupa más espacio horizontal
   }
